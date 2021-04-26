@@ -5,7 +5,6 @@ workflows:
   maven_test:
     jobs:
       - maven/test
-          test_results_path: ~/test-output/Report/test
           
 
 
@@ -28,3 +27,4 @@ jobs:
           key: Dummycircleci-{{ checksum "pom.xml" }}
           paths:
             - ~/.m2
+      - test_results_path: ~/test-output/Report/test
