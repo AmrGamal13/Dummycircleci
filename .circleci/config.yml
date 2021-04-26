@@ -1,0 +1,29 @@
+orbs:
+  maven: circleci/maven@1.1.0
+version: 2.1
+workflows:
+  maven_test:
+    jobs:
+      - maven/test
+          
+
+
+
+jobs:
+  maven/test:
+    docker:
+      - image: circleci/openjdk:8-jdk-stretch
+      
+    environment:
+          # Customize the JVM maximum heap limit
+          MAVEN_OPTS: -Xmx3200m
+          
+    steps:
+      - checkout
+      - run: java --version
+      - run: mvn dependency:go-offline
+      - run: mvn clean test
+      - save_cache:
+          key: Dummycircleci-{{ checksum "pom.xml" }}
+          paths:
+            - ~/.m2
