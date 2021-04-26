@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2548" started-at="2021-04-26T15:18:51Z" finished-at="2021-04-26T15:18:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2548" started-at="2021-04-26T15:18:51Z" finished-at="2021-04-26T15:18:54Z">
+      <class name="MobiquityAPIs.PostCreateTest">
+        <test-method status="PASS" signature="TestDemo()[pri:0, instance:MobiquityAPIs.PostCreateTest@11dc3715]" name="TestDemo" is-config="true" duration-ms="338" started-at="2021-04-26T15:18:51Z" finished-at="2021-04-26T15:18:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestDemo -->
+        <test-method status="PASS" signature="CreatePostAPI()[pri:0, instance:MobiquityAPIs.PostCreateTest@11dc3715]" name="CreatePostAPI" duration-ms="1757" started-at="2021-04-26T15:18:52Z" finished-at="2021-04-26T15:18:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreatePostAPI -->
+      </class> <!-- MobiquityAPIs.PostCreateTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
